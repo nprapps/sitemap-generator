@@ -1,0 +1,5 @@
+Authomatic==0.1.0.post1
+copytext==0.1.9
+Fabric==1.13.2
+Flask==0.12.2
+termcolor==1.1.0

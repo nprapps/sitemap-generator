@@ -1,0 +1,4 @@
+.DS_store
+*.py[co]
+data/*
+!data/.placeholder

@@ -82,12 +82,16 @@ In order to deploy the generated sitemap we will need to mount the samba folder 
 
 Since all of this operations are somewhat convoluted we have left each one as an individual task.
 
-_The samba server we are connecting with should be defined as an environment variable named `sitemap_generator_DEFAULT_SERVER`_
-
 To mount the server at the location where the sitemap should go run:
 
 ```
 fab smb.mount
+```
+
+_The samba server we are connecting with should be defined as an environment variable named `sitemap_generator_DEFAULT_SERVER` or passed a the first parameter to the mount command like in the following example_
+
+```
+fab smb.mount:server="yoursambaserver"
 ```
 
 To actually deploy the file to the server (it will overwrite the old file if it exists):
